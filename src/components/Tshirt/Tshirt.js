@@ -8,7 +8,7 @@ const Tshirt = ({tshirt}) => {
             <img src={picture} alt=""/>
             <h2>Name: {name}</h2>
             <h4>Price: {price}</h4>
-            <button>Buy This</button>
+            <button>Buy T-Shirt</button>
         </div>
     );
 };
