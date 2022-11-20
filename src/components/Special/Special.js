@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Cousin = ({house}) => {
+const Special = ({house}) => {
     return (
         <div>
-            <h1>Cousing</h1>
+            <h1>Special</h1>
             <p>House: {house}</p>
         </div>
     );
 };
 
-export default Cousin;
+export default Special;
