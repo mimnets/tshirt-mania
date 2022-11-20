@@ -23,6 +23,16 @@ const Cart = ({cart, handleRemoveItem}) => {
             {
                 message
             }
+            {/* {
+                cart.length === 3 ? <p>You have seleted 3 items</p> : <p>Do't add more</p>
+            } */}
+            {
+                cart.length >= 1 && cart.length <= 3 ? <p>You have seleted 3 items</p> : <p>Do't add more</p>
+            }
+            <p>And operator</p>
+            {
+                cart.length === 2 && <p>Double</p>
+            }
         </div>
     );
 };
