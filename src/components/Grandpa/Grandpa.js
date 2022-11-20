@@ -14,7 +14,7 @@ const Grandpa = () => {
 
     return (
         <RingContext.Provider value={[house, setHouse]}>
-            <MoneyContext>
+            <MoneyContext.Provider value={money, setMoney}>
                 <div className='grandpa'>
                 <h1>Grandpa</h1>
                 <section className='flex'>
@@ -23,7 +23,7 @@ const Grandpa = () => {
                     <Aunty house={house}></Aunty>
                 </section>
                 </div>
-            </MoneyContext>
+            </MoneyContext.Provider>
         </RingContext.Provider>
     );
 };
