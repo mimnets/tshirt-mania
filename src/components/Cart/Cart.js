@@ -1,4 +1,5 @@
 import React from 'react';
+import ('./Cart.css');
 
 const Cart = ({cart, handleRemoveItem}) => {
 
@@ -13,7 +14,7 @@ const Cart = ({cart, handleRemoveItem}) => {
 
     return (
         <div>
-            <h1>Order Summary</h1>
+            <h1 className={cart.length === 2 ? `orange` : `blue`}>Order Summary</h1>
             {
             cart.map(tshirt => <p>
                 {tshirt.name}
