@@ -29,9 +29,13 @@ const Cart = ({cart, handleRemoveItem}) => {
             {
                 cart.length >= 1 && cart.length <= 3 ? <p>You have seleted 3 items</p> : <p>Do't add more</p>
             }
-            <p>And operator</p>
+            <p>&& - And operator - If condition is true</p>
             {
                 cart.length === 2 && <p>Double</p>
+            }
+            <p>|| - OR Operator - If condition is false</p>
+            {
+                cart.length === 4 || <p>Not 4 Items</p>
             }
         </div>
     );
