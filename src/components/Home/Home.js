@@ -22,7 +22,12 @@ const Home = () => {
 
     }
 
-
+        const handleRemoveItem = (tshirt) =>{
+            console.log(tshirt);
+            const remaining = cart.filter(ts => ts._id !== tshirt._id)
+            // console.log(remaining)
+            setCart(remaining);
+        }
     // console.log(tshirts)
     return (
         <div className='home-container'>
@@ -32,7 +37,7 @@ const Home = () => {
             }
             </div>
             <div className='cart-container'>
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} handleRemoveItem={handleRemoveItem}></Cart>
             </div>
         </div>
     );
